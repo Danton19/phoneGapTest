@@ -1,0 +1,44 @@
+<!doctype html> 
+<html lang="en"> 
+<head> 
+	<meta charset="UTF-8" />
+	<title>Tower Attack!</title>
+    
+    <script src="scripts/phaser/phaser.js"></script>
+    <script src="scripts/graphics.js"></script>
+    <script src="scripts/preload.js"></script>
+    <script src="scripts/boot.js"></script>
+    <script src="scripts/enemy.js"></script>
+    <script src="scripts/tower.js"></script>
+    <script src="scripts/_main.js"></script>
+    
+    <style type="text/css">
+        body {
+            margin: 0;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="gameContainer"></div>
+
+    <script type="text/javascript">
+    
+    window.onload = function() {
+        
+        var firstWidth = window.innerWidth;
+        var firstHeight = window.innerHeight;
+
+        var game = new Phaser.Game(firstWidth, firstHeight, Phaser.AUTO,
+                                   'gameContainer', null, false, false);
+        
+        game.state.add('boot', BasicGame.Boot);
+        game.state.add('preload', BasicGame.Preload);
+        game.state.add('game', GameState);
+        game.state.start('boot');
+    };
+    
+    </script>
+    
+</body>
+</html>
