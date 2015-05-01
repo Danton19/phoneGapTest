@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.agegames.towerattack"
+        versionCode = "10" 
+        version     = "1.0.0" >
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>Tower Attack!</name>
+
+    <description>
+        Defend your last tower! 
+    </description>
+
+    <author href="https://agegames.16mb.com" email="nicobenito10@gmail.com">
+        AGE Games 
+    </author>
+
+</widget>
